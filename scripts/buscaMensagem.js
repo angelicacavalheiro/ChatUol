@@ -26,12 +26,12 @@ function funcaoGeral() {
         else 
           if (tipoMensagem === "private_message") {
           mensagemReservada(dados, i);
+          }
+          if (i === 99) {
+            scroll();
           
           }
-        if (i === 99) {
-          scroll();
-        }
-        i++;
+          i++;
       }
     }
   
@@ -54,13 +54,15 @@ function funcaoGeral() {
     }
   
     function mensagemReservada(dados, i) {
+      let nome = userName.name
       let reservada = document.querySelector(".mensagens-reservadas");
       let elementoTime = dados.data[i].time;
       let elementoFrom = dados.data[i].from;
       let elementoTo = dados.data[i].to;
       let elementoText = dados.data[i].text;
-  
-      acumuladorMensagens =
+
+      if ( elementoTo === nome|| elementoFrom === nome){
+        acumuladorMensagens =
         acumuladorMensagens +
         `
         <div class = "reservada">
@@ -71,10 +73,10 @@ function funcaoGeral() {
         </div>`;
   
         mensagens.innerHTML = acumuladorMensagens;
-      
+
+      } 
     }
     
-  
     function mensagemNormal(dados, i) {
       let normal = document.querySelector(".mensagens-normais");
       let elementoTime = dados.data[i].time;
@@ -95,21 +97,22 @@ function funcaoGeral() {
   
         mensagens.innerHTML = acumuladorMensagens;
     }
-  
-    function scroll(dados, i) {
-      let fimPagina = document.querySelector("footer");
-      fimPagina.scrollIntoView();
+
+
+    function scroll(dados, i){ 
+      let fimPagina = document.querySelector("footer")
+     fimPagina.scrollIntoView()      
     }
-  
+    
     buscarDados();
-  }
+  
+}
   //acaba a função geral
   
   funcaoGeral()
 
   function atualizar() {
-    setInterval(funcaoGeral, 100000); //mudar para 3000 
+    setInterval(funcaoGeral, 3000); 
   }
   
   atualizar();
-  
