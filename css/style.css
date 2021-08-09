@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: #e5e5e5;
+    font-family: "Roboto", sans-serif;
+  }
+  header {
+    height: 80px;
+    width: 100vw;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
+  
+  img {
+    margin: 10px 10px 10px 10px;
+  }
+  
+  header ion-icon {
+    margin: 10px 10px 10px 10px;
+    font-size: 50px;
+  }
+  
+  footer {
+    margin-top: 10px;
+    display: flex;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    border-color: transparent;
+  }
+  
+  footer ion-icon {
+    font-size: 40px;
+  }
+  button {
+    border-color: transparent;
+    background-color: #ffffff;
+  }
+  
+  input {
+    height: 80px;
+    width: 100vw;
+    border-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 139%;
+  }
+  
+  div {
+    weight: 100vw;
+    margin-bottom: 0.5%;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .nome,
+  .para {
+    font-weight: 700;
+  }
+  
+  .status {
+    background-color: #aaaaaa;
+    padding: 2%;
+  }
+  .reservada {
+    background-color: #ffdede;
+    padding: 2%;
+  }
+  
+  .normais {
+    background-color: #ffffff;
+    padding: 2%;
+  }
+  
