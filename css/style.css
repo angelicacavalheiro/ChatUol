@@ -6,6 +6,8 @@
     font-family: "Roboto", sans-serif;
   }
   header {
+    position:fixed;
+    top: 0;
     height: 80px;
     width: 100vw;
     background: #ffffff;
@@ -25,7 +27,8 @@
   }
   
   footer {
-    margin-top: 10px;
+    position: fixed;
+    bottom:0px;    
     display: flex;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     border-color: transparent;
@@ -37,11 +40,12 @@
   button {
     border-color: transparent;
     background-color: #ffffff;
+    width: 10vw;
   }
   
   input {
     height: 80px;
-    width: 100vw;
+    width: 90vw;
     border-color: transparent;
     font-style: italic;
     font-size: 18px;
@@ -49,11 +53,17 @@
   }
   
   div {
-    weight: 100vw;
+    
+    width: 100vw;
     margin-bottom: 0.5%;
     border-radius: 2px;
     font-size: 14px;
     line-height: 16px;
+  }
+  
+  .mensagens{
+    margin-bottom: 100px;
+    margin-top:100px;
   }
   
   .nome,

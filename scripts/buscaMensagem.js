@@ -109,10 +109,7 @@ function funcaoGeral() {
 }
   //acaba a função geral
   
-  funcaoGeral()
-
   function atualizar() {
     setInterval(funcaoGeral, 3000); 
   }
   
-  atualizar();

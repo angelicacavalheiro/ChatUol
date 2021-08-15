@@ -14,14 +14,19 @@
 
   enviarNome()
 
+  function tratarSucessoNome () {
+    funcaoGeral();
+    atualizar();
+  }
   
   function tratarErroNome(){
     enviarNome()
   }
   
+  
   function atualizarPresenca(){
     const atualizaNome = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v3/uol/status", userName);
-    //esse post ta com problema, n sei identificar qual
+    
   }
 
   setInterval(atualizarPresenca, 5000) 
